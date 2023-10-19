@@ -1,0 +1,84 @@
+let dict = {
+    'R': 1,
+    'M': 2,
+    'C': 3,
+    'P': 4
+}
+console.table()
+let i = 0
+
+let w = Math.floor(Math.random() * 4) + 1;
+let x = Math.floor(Math.random() * 4) + 1;
+let y = Math.floor(Math.random() * 4) + 1;
+let z = Math.floor(Math.random() * 4) + 1;
+while (x == w || x == y || x == z || (y == w || y == z) || z == y || z == w) {
+    x = Math.floor(Math.random() * 4) + 1;
+    y = Math.floor(Math.random() * 4) + 1;
+    z = Math.floor(Math.random() * 4) + 1;
+    w = Math.floor(Math.random() * 4) + 1;
+}
+for (i in dict) {
+    if (x == dict[i] && i == 'R') {
+        console.log(i, "Hritik -- 1000")
+    }
+    else if (y == dict[i] && i == 'R') {
+        console.log(i, "Raju -- 1000")
+    }
+    else if (z == dict[i] && i == 'R') {
+        console.log(i, "Suryansh -- 1000")
+    }
+    else if (w == dict[i] && i == 'R') {
+        console.log(i, "Vaibhaw -- 1000")
+    }
+
+
+    else if (x == dict[i] && i == 'P') {
+        console.log(i, "Hritik")
+    }
+    else if (y == dict[i] && i == 'P') {
+        console.log(i, "Raju")
+    }
+    else if (z == dict[i] && i == 'P') {
+        console.log(i, "Suryansh")
+    }
+    else if (w == dict[i] && i == 'P') {
+        console.log(i, "Vaibhaw")
+    }
+
+
+
+
+}
+
+let tt = setTimeout(() => {
+    for (i in dict) {
+        if (x == dict[i] && i == 'C') {
+            console.log(i, "Hritik")
+        }
+        else if (y == dict[i] && i == 'C') {
+            console.log(i, "Raju")
+        }
+        else if (z == dict[i] && i == 'C') {
+            console.log(i, "Suryansh")
+        }
+        else if (w == dict[i] && i == 'C') {
+            console.log(i, "Vaibhaw")
+        }
+
+
+
+        else if (x == dict[i] && i == 'M') {
+            console.log(i, "Hritik -- 800")
+        }
+        else if (y == dict[i] && i == 'M') {
+            console.log(i, "Raju -- 800")
+        }
+        else if (z == dict[i] && i == 'M') {
+            console.log(i, "Suryansh -- 800")
+        }
+        else if (w == dict[i] && i == 'M') {
+            console.log(i, "Vaibhaw -- 800")
+        }
+    }
+
+}, 5000)
